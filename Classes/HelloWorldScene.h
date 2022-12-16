@@ -27,12 +27,14 @@
 
 #include "cocos2d.h"
 
-class HelloWorld : public cocos2d::Scene
+class HelloWorld : public cocos2d::Scene//, public cocos2d::Layer
 {
 public:
     static cocos2d::Scene* createScene();
 
+    // callbacks
     virtual bool init();
+    virtual void update(float dt);
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);

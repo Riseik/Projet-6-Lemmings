@@ -23,6 +23,7 @@
  ****************************************************************************/
 
 #include "HelloWorldScene.h"
+#include "Lemming.h"
 
 USING_NS_CC;
 
@@ -101,10 +102,11 @@ bool HelloWorld::init()
     }
 
     // add "HelloWorld" splash screen"
-    auto sprite = Sprite::create("HelloWorld.png");
-    if (sprite == nullptr)
+    //auto sprite = Sprite::create("lemming.png", Rect(150, 0, 100, 400));
+    lemming* perso = new lemming;
+    /*if (sprite == nullptr)
     {
-        problemLoading("'HelloWorld.png'");
+        problemLoading("lemming.png");
     }
     else
     {
@@ -113,10 +115,16 @@ bool HelloWorld::init()
 
         // add the sprite as a child to this layer
         this->addChild(sprite, 0);
-    }
+    }*/
+
+    scheduleUpdate();
     return true;
 }
 
+void HelloWorld::update(float dt)
+{
+    
+}
 
 void HelloWorld::menuCloseCallback(Ref* pSender)
 {

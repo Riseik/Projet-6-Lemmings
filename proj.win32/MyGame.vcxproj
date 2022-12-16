@@ -117,7 +117,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different Z:/MyCompany/MyGame/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll Z:/MyCompany/MyGame/proj.win32/bin/MyGame/Debug/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -283,7 +284,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different Z:/MyCompany/MyGame/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll Z:/MyCompany/MyGame/proj.win32/bin/MyGame/Release/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -449,7 +451,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different Z:/MyCompany/MyGame/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll Z:/MyCompany/MyGame/proj.win32/bin/MyGame/MinSizeRel/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -614,7 +617,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>												</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different Z:/MyCompany/MyGame/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll Z:/MyCompany/MyGame/proj.win32/bin/MyGame/RelWithDebInfo/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
@@ -805,10 +809,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\General.h" />
+    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\inventory.h" />
+    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\Lemming.h" />
     <ClInclude Include="Z:\MyCompany\MyGame\Classes\AppDelegate.h" />
     <ClInclude Include="Z:\MyCompany\MyGame\Classes\HelloWorldScene.h" />
     <ClInclude Include="Z:\MyCompany\MyGame\proj.win32\main.h" />
     <ClInclude Include="Z:\MyCompany\MyGame\proj.win32\resource.h" />
+    <ClCompile Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\inventory.cpp" />
+    <ClCompile Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\Lemming.cpp" />
     <ClCompile Include="Z:\MyCompany\MyGame\Classes\AppDelegate.cpp" />
     <ClCompile Include="Z:\MyCompany\MyGame\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="Z:\MyCompany\MyGame\proj.win32\main.cpp" />
@@ -882,6 +891,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{C2D4BA4D-F365-3CD8-A7AD-03071DB43140}</Project>
       <Name>external</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Resources\lemming.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

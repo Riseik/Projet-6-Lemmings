@@ -13,6 +13,12 @@
     <ClCompile Include="Z:\MyCompany\MyGame\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\Lemming.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\inventory.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Z:\MyCompany\MyGame\Classes\AppDelegate.h">
@@ -45,6 +51,15 @@
     <ClInclude Include="Z:\MyCompany\MyGame\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\Lemming.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\General.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\inventory.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Z:\MyCompany\MyGame\CMakeLists.txt" />
@@ -73,5 +88,10 @@
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{D9FF0674-87B1-3537-96B6-94ED79215A90}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Resources\lemming.png">
+      <Filter>Resources</Filter>
+    </Image>
   </ItemGroup>
 </Project>
