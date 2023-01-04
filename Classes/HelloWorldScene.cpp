@@ -116,22 +116,33 @@ bool HelloWorld::init()
         // add the sprite as a child to this layer
         this->addChild(sprite, 0);
     }*/
-    this->n_lemmings = 1;
+
+    this->n_lemmings = NOMBRE_LEMMING;
     scheduleUpdate();
     return true;
 }
 
 void HelloWorld::update(float dt)
 {
-    
-    if (this->n_lemmings >= 1)
+
+    if (this->n_lemmings == NOMBRE_LEMMING)
     {
         this->pL = lemming::create();
         addChild(pL);
         this->n_lemmings--;
     }
-    this->pL->setPositionX(this->pL->getPositionX()+5);
-        
+    if (this->n_lemmings >= 1 && this->pL->time_spawn >= 60)
+    {
+        this->pL = lemming::create();
+        addChild(pL);
+        this->n_lemmings--;
+    }
+    if (this->pL->time_spawn >= 60)
+    {
+        this->pL->time_spawn = 0;
+    }
+
+    this->pL->time_spawn++;
     
 }
 

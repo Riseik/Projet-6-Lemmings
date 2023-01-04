@@ -9,9 +9,14 @@ public:
 	virtual ~lemming();
 	virtual bool init();
 	virtual void update(float dt);
-	void move();
+	void animation();
 
 	char direction;
+	int time_anime;
+	int time_spawn;
+	int etat;
+	int num_animation;
+
 	//int x;
 	//int y;
 

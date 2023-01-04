@@ -6,6 +6,7 @@
 #include "cocos2d.h"
 
 
-#define SPEED 10
+#define SPEED 20
+#define NOMBRE_LEMMING 7
 
 USING_NS_CC;
