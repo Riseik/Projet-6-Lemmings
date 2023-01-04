@@ -103,7 +103,7 @@ bool HelloWorld::init()
 
     // add "HelloWorld" splash screen"
     //auto sprite = Sprite::create("lemming.png", Rect(150, 0, 100, 400));
-    lemming* perso = new lemming;
+    //lemming* perso = new lemming;
     /*if (sprite == nullptr)
     {
         problemLoading("lemming.png");
@@ -116,13 +116,22 @@ bool HelloWorld::init()
         // add the sprite as a child to this layer
         this->addChild(sprite, 0);
     }*/
-
+    this->n_lemmings = 1;
     scheduleUpdate();
     return true;
 }
 
 void HelloWorld::update(float dt)
 {
+    
+    if (this->n_lemmings >= 1)
+    {
+        this->pL = lemming::create();
+        addChild(pL);
+        this->n_lemmings--;
+    }
+    this->pL->setPositionX(this->pL->getPositionX()+5);
+        
     
 }
 
