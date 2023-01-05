@@ -809,15 +809,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\General.h" />
-    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\inventory.h" />
-    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\Lemming.h" />
+    <ClInclude Include="..\Classes\General.h" />
+    <ClInclude Include="..\Classes\inventory.h" />
+    <ClInclude Include="..\Classes\Lemming.h" />
     <ClInclude Include="Z:\MyCompany\MyGame\Classes\AppDelegate.h" />
     <ClInclude Include="Z:\MyCompany\MyGame\Classes\HelloWorldScene.h" />
     <ClInclude Include="Z:\MyCompany\MyGame\proj.win32\main.h" />
     <ClInclude Include="Z:\MyCompany\MyGame\proj.win32\resource.h" />
-    <ClCompile Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\inventory.cpp" />
-    <ClCompile Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\Lemming.cpp" />
+    <ClCompile Include="..\Classes\inventory.cpp" />
+    <ClCompile Include="..\Classes\Lemming.cpp" />
     <ClCompile Include="Z:\MyCompany\MyGame\Classes\AppDelegate.cpp" />
     <ClCompile Include="Z:\MyCompany\MyGame\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="Z:\MyCompany\MyGame\proj.win32\main.cpp" />
@@ -894,6 +894,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <Image Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Resources\lemming.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\map lemmings\map.tmx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

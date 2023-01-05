@@ -44,7 +44,7 @@ bool HelloWorld::init()
 {
     //////////////////////////////
     // 1. super init first
-    if ( !Scene::init() )
+    if ( !Scene::initWithPhysics() )
     {
         return false;
     }
@@ -116,7 +116,8 @@ bool HelloWorld::init()
         // add the sprite as a child to this layer
         this->addChild(sprite, 0);
     }*/
-
+    auto map = TMXTiledMap::create("map/map.tmx");
+    addChild(map, 0, 99);
     this->n_lemmings = NOMBRE_LEMMING;
     scheduleUpdate();
     return true;
@@ -124,15 +125,16 @@ bool HelloWorld::init()
 
 void HelloWorld::update(float dt)
 {
-
     if (this->n_lemmings == NOMBRE_LEMMING)
     {
         this->pL = lemming::create();
         addChild(pL);
+        
         this->n_lemmings--;
     }
     if (this->n_lemmings >= 1 && this->pL->time_spawn >= 60)
     {
+       
         this->pL = lemming::create();
         addChild(pL);
         this->n_lemmings--;

@@ -13,10 +13,10 @@
     <ClCompile Include="Z:\MyCompany\MyGame\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\Lemming.cpp">
+    <ClCompile Include="..\Classes\inventory.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\inventory.cpp">
+    <ClCompile Include="..\Classes\Lemming.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -51,13 +51,13 @@
     <ClInclude Include="Z:\MyCompany\MyGame\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\Lemming.h">
+    <ClInclude Include="..\Classes\Lemming.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\General.h">
+    <ClInclude Include="..\Classes\inventory.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Classes\inventory.h">
+    <ClInclude Include="..\Classes\General.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
@@ -88,10 +88,18 @@
     <Filter Include="Source Files\proj.win32">
       <UniqueIdentifier>{D9FF0674-87B1-3537-96B6-94ED79215A90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\map">
+      <UniqueIdentifier>{66de7afb-aeed-4595-8477-cbeb564165d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="C:\Users\ejoachimgabin\Documents\Lemmings\MyCompany\MyGame\Resources\lemming.png">
       <Filter>Resources</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\map lemmings\map.tmx">
+      <Filter>Resources\map</Filter>
+    </None>
   </ItemGroup>
 </Project>
