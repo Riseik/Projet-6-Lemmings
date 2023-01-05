@@ -21,9 +21,16 @@ bool lemming::init()
 	//"lemming.png"
 	//Sprite::create("lemming.png", Rect(150, 0, 100, 400));
 	setTexture("lemming.png");
-	setTextureRect(Rect(150, 0, 50, 170));
+	setTextureRect(Rect(150, 10, 50, 170));
 	setPosition(50, 100);
 	setScale(0.2f, 0.2f);
+	
+	auto physicsBody = PhysicsBody::createBox(Size(50.0f, 75.0f),
+		PhysicsMaterial(0.1f, 1.0f, 0.0f));
+	physicsBody->setVelocity(Vec2(SPEED,0));
+	physicsBody->setGravityEnable(true);
+	this->addComponent(physicsBody);
+
 	this->num_animation = 1;
 	this->time_spawn = 0;
 	this->time_anime = 0;
@@ -37,11 +44,9 @@ void lemming::update(float dt)
 	switch (this->etat)
 	{
 	case 1:				//marche a droite
-		this->setPositionX(this->getPositionX() + SPEED*dt);
 		this->animation();
 		break;
 	case 2:				//marche a gauche
-		this->setPositionX(this->getPositionX() - SPEED*dt);
 		this->animation();
 		break;
 
@@ -68,7 +73,6 @@ void lemming::animation()
 	{
 		this->setTextureRect(Rect(220, 0, 50, 170));
 		this->num_animation = 1;
-
 	}
 	if (this->time_anime >= 30)
 	{
@@ -76,4 +80,3 @@ void lemming::animation()
 	}
 
 }
-

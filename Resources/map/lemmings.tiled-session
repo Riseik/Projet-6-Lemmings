@@ -1,0 +1,91 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Z:/MyCompany/MyGame/Resources/map.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "329.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "Z:/MyCompany/MyGame/Resources/329.tsx": {
+            "scaleInDock": 1
+        },
+        "Z:/MyCompany/MyGame/Resources/forest (1).tsx": {
+            "scaleInDock": 1
+        },
+        "Z:/MyCompany/MyGame/Resources/map.tmx": {
+            "scale": 1.5635416666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.47968021319122,
+                "y": 72.59160559626916
+            }
+        },
+        "decor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 0.33
+        },
+        "forest (1).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "forest.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "lemmings-original-large.tsx": {
+            "scaleInDock": 0.75,
+            "scaleInEditor": 1
+        },
+        "map.tmx": {
+            "scale": 1.4289583333333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 250.5321475433737,
+                "y": 159.90669193760021
+            }
+        },
+        "sans titre.tmx": {
+            "scale": 1.4289583333333333,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 227.43840209943147,
+                "y": 159.5567867036011
+            }
+        }
+    },
+    "last.imagePath": "C:/Users/emaillard/Documents/map lemmings",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "openFiles": [
+        "map.tmx",
+        "lemmings-original-large.tsx",
+        "329.tsx",
+        "decor.tsx",
+        "forest (1).tsx",
+        "Z:/MyCompany/MyGame/Resources/map.tmx"
+    ],
+    "project": "lemmings.tiled-project",
+    "recentFiles": [
+        "map.tmx",
+        "lemmings-original-large.tsx",
+        "329.tsx",
+        "decor.tsx",
+        "forest (1).tsx",
+        "Z:/MyCompany/MyGame/Resources/map.tmx",
+        "sans titre.tmx",
+        "forest.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 64,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
